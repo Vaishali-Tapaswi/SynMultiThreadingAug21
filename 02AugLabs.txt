@@ -1,3 +1,21 @@
+Lab 8 - Create a new project Demo3
+        Lab1.java -> 
+            Create three threads to add items(100) in the list 
+                Show list size after all three threads complete execution
+                1. Thread Group
+                2. in main thread in while loop 
+                    show list size when active count changes
+-------------------------------------------------
+Lab 7 - 
+    Demo1
+        Understand Thread priority (multiple\Lab3)
+        ui.NoThread
+        ui.Thread
+        ui.ThreadPriorty
+    Demo2 
+        Lab1 - daemon thread
+        Lab2 - Thread Group
+-------------------------------------------------    
 Lab 6 - Start 3 threads and stop and show the message of which thread completes its executions
     Dice game / on 3 place to visit-> choose 1 from these three
     package conc;

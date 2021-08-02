@@ -1,5 +1,56 @@
 Lab 6 - Start 3 threads and stop and show the message of which thread completes its executions
     Dice game / on 3 place to visit-> choose 1 from these three
+    package conc;
+
+    import java.util.Scanner;
+
+    class Lab2Helper implements Runnable {
+        static boolean flag = true;
+        String str;
+
+        public Lab2Helper(String str) {
+            this.str = str;
+        }
+
+        @Override
+        public void run() {
+            for (int i = 1; i <= 10; i++) {
+                try {
+                    Thread.sleep((long) (Math.random() * 1000));
+                } catch (InterruptedException e) {
+                }
+                if (flag == true) {
+                    System.out.println(str + i);
+                    Lab2.location = str;
+                    if (i == 10)
+                        flag = false;
+                } else {
+                    break;
+                }
+            }       }    }
+
+    public class Lab2 {
+        static String location = "";
+
+        public static void main(String[] args) {
+            Thread t1 = new Thread(new Lab2Helper("Shimla"));
+            Thread t2 = new Thread(new Lab2Helper("Manali"));
+            Thread t3 = new Thread(new Lab2Helper("Kulu"));
+            t1.start();
+            t2.start();
+            t3.start();
+            try {
+                t1.join();
+                t2.join();
+                t3.join();
+            } catch (InterruptedException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+            System.out.println("Your Choice of  Location = " + location);
+        }
+    }
+
 Lab 5 - Create class conc.Lab1
     package conc;
 

@@ -1,3 +1,5 @@
+Lab 6 - Start 3 threads and stop and show the message of which thread completes its executions
+    Dice game / on 3 place to visit-> choose 1 from these three
 Lab 5 - Create class conc.Lab1
     package conc;
 

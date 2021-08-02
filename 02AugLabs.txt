@@ -1,0 +1,44 @@
+Create new java project (Demo1)
+Lab 1 
+    Create a new class basicdemo.Lab1
+      write main method
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Press a number to continue");
+        scanner.nextInt();
+      run the class
+   on cmd prompt(set path=c:\jdk\bin)
+    jvisualvm
+    on left side, click on Lab1 and observe threads
+Lab 2 
+  Create class basicdemo.Lab2
+    package basicdemo;
+
+    import java.util.Scanner;
+
+    class Thread1 extends Thread{
+      @Override
+      public void run() {
+        System.out.println("Current Thread is " + this.getName());
+        for (int i = 0; i< 999900;i++) {
+          System.out.print(i +"\t");
+        }
+      }
+    }
+    public class Lab2 {
+
+      public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter a number to continue");
+        scanner.nextInt();
+        System.out.println("Current Code in main with thread " + Thread.currentThread().getName());
+          Thread t1 = new Thread1();
+          t1.start();
+
+      }
+
+    }
+  Run and observe using jvisualvm
+Lab 3 (copy of lab2.java)
+  Change Thread1 to Thread2 and modify extends Thread to implements Runnable
+  
+Lab 4 - Create thread using Java 8

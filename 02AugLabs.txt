@@ -1,3 +1,7 @@
+Lab 9 - Modify Lab1 file 
+        Lab2.java -> with synchronized block
+        Lab3.java -> 	List<String> list = 	Collections.synchronizedList(new ArrayList<String>());
+        
 Lab 8 - Create a new project Demo3
         Lab1.java -> 
             Create three threads to add items(100) in the list 

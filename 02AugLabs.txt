@@ -1,3 +1,27 @@
+Lab 11
+   Lab 5(demo3)
+		class DepositThread implements Runnable {
+			private Bank bank;
+			field constructor
+			run(){
+				for (100 times)
+					increase bank balance by 1
+			}
+		}
+		WidrawThread ...
+			100 times decrease balance by 1
+		class Bank {
+			private String acno;
+			private int balance;
+			+ public get/set + toString + field constructor
+		}
+		class Lab5 
+			main
+				invoke and check the balance
+				
+		
+	
+--------------------------------------------
 Lab 10 - Find out the problem
         import java.util.Scanner;
 

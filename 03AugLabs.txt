@@ -1,4 +1,13 @@
-Lab 1 - 	create new project demo4. 
+Lab2 - same as Lab1
+	ExecutorService service = Executors.newFixedThreadPool(3);
+	Start the same task thrice and see thread names
+	Create one more class with runnable
+		and on some condiction throw RuntimeException
+		monitor in jvisualvm / console
+			new thread created as soon as first gives error(fails)
+	
+--------------------
+Lab 1 - create new project demo4. 
     modify following code with executor service
         import java.util.Scanner;
 

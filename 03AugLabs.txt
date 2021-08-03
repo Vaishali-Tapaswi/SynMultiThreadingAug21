@@ -1,3 +1,9 @@
+Lab 10 - Create lab 10 for 
+	Two types of objects -> Car, Block
+		Game -> 1 Car + 1 Block -> Multiple Games
+		Level1, 2, 3 ...
+		Car and Block both should change the level together
+		
 Lab 9 - Barrier
 	package sync;
 

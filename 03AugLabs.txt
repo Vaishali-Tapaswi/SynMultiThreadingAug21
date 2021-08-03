@@ -1,3 +1,41 @@
+Lab 4 - Callable
+	class Lab4Helper implements Callable<Integer>{
+	private int no1;
+	private int no2;
+	
+	public Lab4Helper(int no1, int no2) {
+		this.no1 = no1;
+		this.no2 = no2;
+	}
+	@Override
+	public Integer call() throws Exception {
+		System.out.println("Call invoked in Thread " + Thread.currentThread().getName() + " with " + no1 + ", " + no2);
+		try{Thread.sleep(400);}catch(Exception e) {}
+		return no1+no2;
+	}
+	}
+	
+	modify main method to invoke 
+		ExecutorService service = Executors.newFixedThreadPool(2);
+		Future<Integer>[] arr = new Future[10];
+		for (int  i=1;i<=10;i++) {
+			arr[i-1] = service.submit(new Lab4Helper(i+1, i*2));
+		}
+		
+		System.out.println(".....");
+		for (int  i=1;i<=10;i++) { 
+			System.out.println("Ans = " + arr[i-1].get());
+		}
+		}
+
+Lab 3 - 
+	ExecutorService service = Executors.newCachedThreadPool();
+	    for (int i =0; i< 100;i++) {
+		  service.execute(new Lab31Helper()); 
+		  service.execute(new Lab32Helper()); 
+		  service.execute(new Lab31Helper()); 
+		}
+
 Lab2 - same as Lab1
 	ExecutorService service = Executors.newFixedThreadPool(3);
 	Start the same task thrice and see thread names

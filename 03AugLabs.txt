@@ -1,4 +1,4 @@
-
+Lab 12 - Fork-Join code first phase of writing core logic
 Lab 11 - use of fork-join
 	package fk;
 

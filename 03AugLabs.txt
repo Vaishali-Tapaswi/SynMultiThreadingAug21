@@ -1,3 +1,9 @@
+Lab 7 - create Lab2.java
+	Main
+		accept input -> number
+			start those many threads
+			and then after 50% threads get over -> show 50% over...
+		
 Lab 6 - 
 package threadinteraction;
 
